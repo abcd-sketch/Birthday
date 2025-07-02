@@ -24,16 +24,18 @@
 
     .container {
       position: relative;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: column;
+      padding: 1rem;
+      box-sizing: border-box;
     }
 
     .decor {
       position: absolute;
-      font-size: 2rem;
+      font-size: 1.5rem;
       animation: float 5s infinite ease-in-out;
     }
 
@@ -43,19 +45,19 @@
     }
 
     .surprise-btn {
-      padding: 1rem 2rem;
-      font-size: 1.5rem;
+      padding: 0.8rem 1.5rem;
+      font-size: 1.2rem;
       background: #ff6f91;
       border: none;
       border-radius: 25px;
       cursor: pointer;
       color: white;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
     }
 
     .surprise-btn:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
 
     .content {
@@ -72,54 +74,54 @@
     }
 
     .corner-img {
-      width: 120px;
-      height: 120px;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
-      border: 3px solid white;
+      border: 2px solid white;
       object-fit: cover;
       position: absolute;
     }
 
     .top-left {
-      top: 20px;
-      left: 20px;
+      top: 10px;
+      left: 10px;
     }
 
     .top-right {
-      top: 20px;
-      right: 20px;
+      top: 10px;
+      right: 10px;
     }
 
     .bottom-left {
-      bottom: 20px;
-      left: 20px;
+      bottom: 10px;
+      left: 10px;
     }
 
     .bottom-right {
-      bottom: 20px;
-      right: 20px;
+      bottom: 10px;
+      right: 10px;
     }
 
     .birthday-text {
-      font-size: 3rem;
+      font-size: 2rem;
       margin: 1rem 0;
-      text-shadow: 2px 2px 8px rgba(0,0,0,0.2);
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.2);
     }
 
     .message {
-      font-size: 1.8rem;
-      max-width: 700px;
-      padding: 1rem;
+      font-size: 1.1rem;
+      max-width: 90%;
+      padding: 0.8rem;
       background: rgba(255, 255, 255, 0.1);
-      border-radius: 20px;
+      border-radius: 15px;
       backdrop-filter: blur(10px);
     }
 
     .footer-paragraph {
       position: absolute;
       bottom: 40px;
-      font-size: 1rem;
-      max-width: 80%;
+      font-size: 0.9rem;
+      max-width: 90%;
       background: rgba(0, 0, 0, 0.2);
       padding: 0.5rem 1rem;
       border-radius: 15px;
@@ -129,7 +131,7 @@
     .copyright {
       position: absolute;
       bottom: 10px;
-      font-size: 0.9rem;
+      font-size: 0.75rem;
       color: black;
       opacity: 0.8;
     }
@@ -141,18 +143,18 @@
     <div class="decor" style="top: 20%; right: 20%;">🎉</div>
     <div class="decor" style="bottom: 15%; left: 25%;">🎂</div>
     <div class="decor" style="bottom: 10%; right: 15%;">🎁</div>
-    <h1>Click the button to reveal your surprise!</h1>
+    <h1 style="font-size: 1.5rem; margin-bottom: 1rem;">Click the button to reveal your surprise!</h1>
     <button class="surprise-btn" onclick="showBirthdayWish()">🎊 Surprise 🎊</button>
   </div>
 
   <div class="container content" id="birthdayContent">
-    <img src="IMG-20250603-WA0001.jpg" alt="Top Left" class="corner-img top-left">
-    <img src="IMG-20250322-WA0003.jpg" alt="Top Right" class="corner-img top-right">
+    <img src="IMG-20250322-WA0003.jpg" alt="Top Left" class="corner-img top-left">
+    <img src="IMG-20250603-WA0001.jpg" alt="Top Right" class="corner-img top-right">
     <img src="IMG-20250603-WA0059.jpg" alt="Bottom Left" class="corner-img bottom-left">
     <img src="IMG-20250617-WA0010.jpg" alt="Bottom Right" class="corner-img bottom-right">
     <h2 class="birthday-text">🎉 Happy Birthday Dadabhai! 🎉</h2>
     <p class="message">
-      Wishing you a day filled with love❤, joy, and a lot of (CHECKS and BELL PREDICTIONS💦) and unforgettable memories! May your year ahead be as amazing as you are. Happy Birthday!
+      Wishing you a day filled with love, joy, and a lot of (CHECKS and BELL PREDICTIONS) and unforgettable memories! May your year ahead be as amazing as you are. Happy Birthday!
     </p>
     <p class="footer-paragraph">
       This special website is created by Arkendu Chatterjee(Tatai), with pure love using HTML and CSS. 🎁
